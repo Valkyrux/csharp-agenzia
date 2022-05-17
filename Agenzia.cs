@@ -25,6 +25,14 @@ namespace csharp_agenzia
             this.lstImmobile.Add(newAppartamento);
         }
 
+        internal void AddListaImmobili(List<Immobile> lstImmobili)
+        {
+            foreach (Immobile m in lstImmobili)
+            {
+                this.lstImmobile.Add(m);
+            }
+        }
+
         public void AddVilla(string codice, string indirizzo, string CAP, string citta, uint superficieMQuadrati, uint numeroVani, uint numeroBagni, uint superficieMQuadratiGiardino)
         {
             Villa newVilla = new Villa(codice, indirizzo, CAP, citta, superficieMQuadrati, numeroVani, numeroBagni, superficieMQuadratiGiardino);
